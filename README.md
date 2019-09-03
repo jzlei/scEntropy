@@ -11,14 +11,17 @@ The examples of two different scEntropy options are given as follows:
 
 **scEntropy with predefined reference cell**
 
-    import scEntropy  
-    scEntropy.  
-
+```python
+import scEntropy  
+scEntropy.  
+```
 
 **scEGMM framework**
 
-    import scEntropy  
-    scEntropy.  
+```python
+import scEntropy  
+scEntropy.  
+``` 
 
 
 # Final words
