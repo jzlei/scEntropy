@@ -12,16 +12,16 @@ The examples of two different scEntropy options are given as follows:
 **scEntropy with predefined reference cell**
 
 `
-import scEntropy
-scEntropy.
+import scEntropy  
+scEntropy.  
 `
 
 
 **scEGMM framework**
 
 `
-import scEntropy
-scEntropy.
+import scEntropy  
+scEntropy.  
 `
 
 
