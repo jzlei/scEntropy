@@ -136,4 +136,6 @@ def scEntropy_with_RCSA():
 
 def main():
     process_raw_data()
+    scEntropy_with_pre_ref()
+    scEntropy_with_RCSA()
     return
