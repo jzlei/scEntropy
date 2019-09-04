@@ -12,17 +12,20 @@ The examples of two different scEntropy options are given as follows:
 **scEntropy with predefined reference**
 `
 import scEntropy
-scEntropy.
+scEntropy.scEntropy(df_data, ref_vec=None, option='predefined')
 `
-
+If you don't pass any `ref_vec` as reference cell(RC), the predefined procedure will use the average gene expression of all cells to replace the `ref_vec`.
+But if you pass a `ref_vec` which is not `None` type, the predefined procedure will use this passed reference cell to generate scEntropy index.
 
 **scEGMM framework**
 
 `
 import scEntropy
-scEntropy.
+scEntropy.scEntropy(df_data, option='RCSA')
 `
+If you use scEGMM framework, you don't need to pass any reference cell, since the scEGMM framework will automatically impose the RCSA to identify the intrinsic reference cell in a data set. And then scEntropy index will be generated.
 
+To see the details of the above two different samples, please check the function `scEntropy_with_pre_ref` and `scEntropy_with_RCSA` in [**sample_code.py**](https://github.com/jzlei/scEntropy/blob/master/sample_code.py).
 
 # Final words
 
