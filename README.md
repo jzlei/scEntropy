@@ -12,7 +12,8 @@ The examples of two different scEntropy options are given as follows:
 **scEntropy with predefined reference**
 
 ```python
-import scEntropy
+# You need to use `pip install git+https://github.com/jzlei/scEntropy.git` to install this package
+import scEntropy.scEntropy as scEntropy 
 import pandas as pd
 import os
 data_file_path = os.path.join('data', 'HNSCC_gene_expression.csv')
@@ -26,7 +27,8 @@ But if you pass a `ref_vec` which is not `None` type, the predefined procedure w
 **scEGMM framework**
 
 ```python
-import scEntropy
+# You need to use `pip install git+https://github.com/jzlei/scEntropy.git` to install this package
+import scEntropy.scEntropy as scEntropy
 import pandas as pd
 import os
 data_file_path = os.path.join('data', 'HNSCC_gene_expression.csv')
