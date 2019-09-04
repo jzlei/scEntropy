@@ -29,6 +29,9 @@ def calc_entropy(data_series, left=-100, right=100, step=0.01):
 
 # RCSA
 # We use RCSA to find the intrinsic reference cell in a data set
+# Parameters:
+# 1. df_content: the dataframe of a gene expression matrix
+# 2. components: the number of gaussian components in scEGMM framework, we use 2 gaussian components as default
 def RCSA(df_content, components=2):
 
     idx = 0
