@@ -24,7 +24,7 @@ def calc_entropy(data_series, left=-100, right=100, step=0.01):
     bins_cnt, bin_edges = np.histogram(data_series.values, bins=bins_interval)
     bins_cnt = bins_cnt[bins_cnt > 0]
     prob_vec = bins_cnt / bins_cnt.sum()
-    res_sum = (-prob_vec * np.log(prob_vec)).sum()
+    res_sum = (-prob_vec * np.log2(prob_vec)).sum()
     return res_sum
 
 # RCSA
