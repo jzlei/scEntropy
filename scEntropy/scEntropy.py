@@ -87,7 +87,7 @@ def RCSA(df_content, components=2):
 # 2. ref_vec: the reference cell expression vector for df_content
 def scEntropy(df_content, ref_vec=None, option='predefined'):
     if option == 'predefined':
-        if ref_vec == None:
+        if ref_vec is None:
             ref_vec = get_default_ref(df_content)
     elif option == 'RCSA':
         ref_vec = RCSA(df_content)
